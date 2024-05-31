@@ -41,17 +41,53 @@ h6 {
 }
 
 nav {
-    background-color: #212529;
-    color: #ffffff;
+  background-color: #212529;
+  color: #ffffff;
 
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+  padding: 0;
 
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
+
+select {
+  background: none;
+  border: none;
+
+  color: inherit;
+}
+ select > option {
+  color: #212529;
+ }
+
+ input[type="text"] {
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  border: none;
+ }
+
+ button {
+    background: none;
+    border: 1px solid #1a8553; 
+    padding: 0.2rem 0.9rem;
+    border-radius: 3px;
+
+    color: #1a8553;
+ }
+
+ button:hover {
+  background-color: #1a8553;
+  color: #ffffff;
+
+  cursor: pointer;
+ }
