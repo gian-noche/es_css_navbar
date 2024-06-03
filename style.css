@@ -48,6 +48,27 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem;
+
+  gap: 1rem;
+}
+
+.menu_icon {
+  display: none;
+
+  background-color: none;
+  color: none;
+  background: none;
+  border: none;
+
+  height: 50px;
+  width: auto;
+}
+
+svg {
+  height: 100%;
+  width: auto;
+
+  fill: #ffffff;
 }
 
 ul {
@@ -76,20 +97,36 @@ select {
   padding: 0.25rem 0.5rem;
   border-radius: 3px;
   border: none;
+
+  width: 100%;
+  max-width: 190px;
+
+  margin-right: 0.25rem;
  }
 
- button {
+ button:not(button.menu_icon) {
     background: none;
     border: 1px solid #1a8553; 
-    padding: 0.2rem 0.9rem;
+    padding: 0.2rem 0.8rem;
     border-radius: 3px;
 
     color: #1a8553;
  }
 
- button:hover {
+ button:hover:not(button.menu_icon) {
   background-color: #1a8553;
   color: #ffffff;
 
   cursor: pointer;
+ }
+
+ @media screen and (max-width: 768px) {
+
+  .menu_icon {
+    display: unset;
+  }
+  
+   ul {
+     display: none;
+   }
  }
